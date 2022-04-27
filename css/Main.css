@@ -1,0 +1,71 @@
+.setFont {
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.bodyBackground {
+    background: #212121;
+}
+
+.boxStyle1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    color: white;
+    border: 0.2em solid #d1c4e9;
+    font-size: 1.5em;
+    background: #7C4DFF;
+    border-radius: 1em;
+    margin-bottom: 50px;
+}
+.boxStyle2 {
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    border: 0.2em solid #81d4fa;
+    font-size: 1.5em;
+    background: #283593;
+    border-radius: 1em;
+    margin-bottom: 50px;
+}
+.boxStyle3 {
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    border: 0.2em solid #33bb33;
+    font-size: 1.5em;
+    background:  #005500;
+    border-radius: 1em;
+    margin-bottom: 50px;
+}
+
+.imgProfile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 100%;
+    width: 40%;
+}
+.imgText {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10%;
+    width: 100%;
+}
+.setHead{
+    margin-bottom: 5px;
+    text-align: center;
+    color: #090909;
+    font-weight: bolder;
+}
