@@ -1,13 +1,11 @@
 .navbarHover:hover{
-    background-color: #80cbc4;
+    background-color: #27303a;
 }
 .navbarClik:active{
     background-color: #0D6EFD;
     color: white;
 }
 .navbarStyle{
-
-    background: #00695c;
     font-size: 1.5em;
     display: flex;
     flex-direction: row;
