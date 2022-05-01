@@ -1,0 +1,37 @@
+.footerLinkStyle {
+    font-size: 1em;
+    color: lightgray;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.listStyle {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+.footerLiStyle {
+
+    display: inline;
+}
+
+.footerGitHubLink{
+    text-align: center;
+    font-size: 1.3em;
+    color: lightgray;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.footerGitHub{
+    text-align: center;
+}
+
+.footerLinkHover:hover{
+    color: #d90404;
+}
+
+.footerHr{
+    color: white;
+}
