@@ -101,3 +101,10 @@ html {
 .PicturedInfoBox:hover{
     color: #0DCAF0;
 }
+
+.CommunicationStyle{
+    border: solid white 1px;
+    border-radius: 30px;
+    padding: 30px;
+    color: #ddd;
+}
