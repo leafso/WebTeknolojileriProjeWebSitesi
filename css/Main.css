@@ -21,6 +21,7 @@ html {
     border-radius: 100%;
     width: 100%;
 }
+
 .imgProfile2 {
     display: block;
     margin-top: 20px;
@@ -32,6 +33,7 @@ html {
     border-radius: 30px;
     width: 100%;
 }
+
 .imgText {
     display: block;
     margin-left: auto;
@@ -84,27 +86,38 @@ html {
     margin-right: auto;
 
 }
-.BaslikResmi{
+
+.BaslikResmi {
     width: 100%;
     height: 20vw;
 }
 
-.BorderRadius{
-    
-    border-radius:15px;
+.BorderRadius {
+
+    border-radius: 15px;
 }
 
-.PicturedInfoBox{
+.PicturedInfoBox {
     color: #6C757D;
 }
 
-.PicturedInfoBox:hover{
+.PicturedInfoBox:hover {
     color: #0DCAF0;
 }
 
-.CommunicationStyle{
+.CommunicationStyle {
     border: solid white 1px;
     border-radius: 30px;
     padding: 30px;
     color: #ddd;
+}
+
+.sliderImg {
+    height: 300px;
+}
+
+.MapStyle{
+    padding: 0;
+    border-radius: 20px;
+    height: 300px;
 }
