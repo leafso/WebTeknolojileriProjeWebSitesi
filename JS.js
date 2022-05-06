@@ -1,7 +1,7 @@
-function initMap(){
-    var locationKaraman = {lat: 37.170050, lng: 33.222090};
+function initMap(VarLat = 37.170050 , VarLng = 33.222090 , VarZoom = 15){
+    var location = {lat: VarLat, lng: VarLng};
     var map = new google.maps.Map(document.getElementById("mapKaraman"),
-    {zoom: 9,
-    center: locationKaraman});
-    var marker = new google.maps.Marker({position: locationKaraman, map: map});   
+    {zoom: VarZoom,
+    center: location});
+    var marker = new google.maps.Marker({position: location, map: map});   
 }
