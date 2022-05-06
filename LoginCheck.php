@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emre Kara | Login</title>
-    <meta name="description" content="a website about Emre Kara and Karaman where a citiy of Turkey">
-    <meta name="keywords" content="Emre Kara , Login , giriş ">
-    <meta name="author" content="Emre Kara">
+   
     <!--My css files-->
     <link rel="stylesheet" href="./css/Main.css">
     <link rel="stylesheet" href="./css/NavbarStyle.css" />
@@ -34,14 +31,14 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-sm border-bottom bg-dark navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./Anasayfa.html">Emre_Kara</a>
+            <a class="navbar-brand" href="./index.html">Emre_Kara</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item navbarClik navbarHover ">
-                        <a href="./Anasayfa.html" class="nav-link text-muted">Anasayfa</a>
+                        <a href="./index.html" class="nav-link text-muted">Anasayfa</a>
                     </li>
                     <li class="nav-item  navbarClik navbarHover">
                         <a href="./CV.html" class="nav-link text-muted ">CV</a>
@@ -85,7 +82,7 @@
                         <a href="./Iletisim.html" class="nav-link text-muted">İletişim</a>
                     </li>
                     <li class="nav-item navbarClik navbarHover">
-                        <a href="./Login.html" class="nav-link text-warning"><i
+                        <a href="./Login.php" class="nav-link text-warning"><i
                                 class="fa-solid fa-right-to-bracket"></i>
                             Login</a>
                     </li>
@@ -96,29 +93,46 @@
     <br>
 
 
+    <br><br><br><br>
+  
+  <main>
 
-    <section>
-        <div class="container col-lg-4 ">
-            <h3 class="text-white"> &nbsp <i class="fa-solid fa-right-to-bracket"></i> &nbsp Login </h3>
-            <form action="" class=" CommunicationStyle">
+<div class="container">
+  
+<?php 
+   include("KullaniciBilgileri.php");
+   if (($_POST["email"] == $user) and ($_POST["password"] == $pass))
+   {
+     $_SESSION["user"] = $user;
+     $_SESSION["pass"] = $pass;
+     
+     echo ' <a style="text-decoration: none" href="index.html"><div class="alert alert-success ">Başarılı bir şekilde giriş yaptınız! <sub>Anasayfaya gitmek için tıklatın </sub></div></a>';
+   }
+   else 
+   {           
+     echo ' <a style="text-decoration: none" href="Login.php"><div class="alert alert-danger ">"HATALI GİRİŞ <sub>Tekrar denemek için tıklatın </sub>"</div></a>';
+   }
+  ?>
+  
+</div>
 
-                <label for="email">Kullanıcı Adı:</label><br>
-                <input type="email" name="email" id="email" placeholder="@" class="col-12" required><br><br>
-            
-                <label for="ad">Şifre:</label><br>
-                <input type="password" id="ad" name="ad" placeholder="Adınız.." class="col-12" autofocus required><br><br>
-
-                <hr>
-
-                <input type="reset" value="Temizle" class="btn btn-outline-danger col-12">
-                <br> <br>
-                <input type="submit" value=" Gönder" class="btn btn-outline-primary col-12"> 
-
-            </form>
-        </div>
-    </section>
-
-
+</main>
+  
+<br><br><br><br>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
     <footer>
         <br><br>
@@ -126,7 +140,7 @@
         <br>
         <div class="container ">
             <ul class=" listStyle container-fluid">
-                <li class="footerLiStyle"><a href="./Anasayfa.html" class="footerLinkStyle footerLinkHover">Anasayfa</a>
+                <li class="footerLiStyle"><a href="./index.html" class="footerLinkStyle footerLinkHover">Anasayfa</a>
                 </li>
                 <li class="footerLiStyle"><a href="./CV.html" class="footerLinkStyle footerLinkHover">CV</a></li>
                 <li class="footerLiStyle"><a href="./IlgiAlanlarım.html"
@@ -137,7 +151,7 @@
                 </li>
                 <li class="footerLiStyle"><a href="./Iletisim.html" class="footerLinkStyle footerLinkHover">İletişim</a>
                 </li>
-                <li class="footerLiStyle"><a href="./Login.html" class="footerLinkStyle footerLinkHover">Login </a></li>
+                <li class="footerLiStyle"><a href="./Login.php" class="footerLinkStyle footerLinkHover">Login </a></li>
             </ul>
         </div>
         <br>

@@ -5,16 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emre Kara | CV</title>
-    <meta name="description" content="a website about Emre Kara and Karaman where a citiy of Turkey">
-    <meta name="keywords" content="Emre Kara , cv , Özgeçmiş, okul, eğitim">
-    <meta name="author" content="Emre Kara">
-
     <!--My css files-->
     <link rel="stylesheet" href="./css/Main.css">
     <link rel="stylesheet" href="./css/NavbarStyle.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/table.css" />
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +40,7 @@
                         <a href="./index.html" class="nav-link text-muted">Anasayfa</a>
                     </li>
                     <li class="nav-item  navbarClik navbarHover">
-                        <a href="./CV.html" class="nav-link text-warning ">CV</a>
+                        <a href="./CV.html" class="nav-link text-muted ">CV</a>
                     </li>
                     <li class="nav-item navbarClik navbarHover">
                         <a href="./IlgiAlanlarım.html" class="nav-link text-muted ">Hobilerim</a>
@@ -87,7 +81,8 @@
                         <a href="./Iletisim.html" class="nav-link text-muted">İletişim</a>
                     </li>
                     <li class="nav-item navbarClik navbarHover">
-                        <a href="./Login.php" class="nav-link text-muted"><i class="fa-solid fa-right-to-bracket"></i>
+                        <a href="./Login.php" class="nav-link text-warning"><i
+                                class="fa-solid fa-right-to-bracket"></i>
                             Login</a>
                     </li>
                 </ul>
@@ -96,117 +91,36 @@
     </nav>
     <br>
 
+    <main>
 
-
-
-
-    <section class=" container bg-dark BorderRadius">
-        <div class=" row expnationBoxStyle">
-            <div class=" card bg-dark text-danger col-md ">
-                <div class="card-body cardTextStyle">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text ">
-                        Some example text some example text. John Doe Lorem ipsum dolor sit amet,
-                        a nihil placeat, eius corrupti a
-                        voluptas eligendi voluptatibus nesciunt iure ducimus consectetur adipisci asperiores expedita,
-                        dolorem sed minima et voluptatum quis? Id fugit repudiandae repellat ducimus eligendi architecto
-                        suscipit sapiente? is an architect and engineer</p>
+        <div class="container col-lg-4 text-white">
+            <h3 class="text-white"> &nbsp <i class="fa-solid fa-right-to-bracket"></i> &nbsp Login </h3>
+            <div class="CommunicationStyle">
+                <form action="LoginCheck.php" method="POST">
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" onKeyUp="kontrol()" class="form-control" placeholder="Email 'email@mail.com'" required="required">
                 </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="Şifre 'Password'" required="required">
+                </div>
+                <hr>
+                <button class="btn btn-outline-primary col-12" type="submit">Gönder</button>
+                <br> <br>
+                <button class="btn btn-outline-danger col-12" type="submit">Temizle</button>
+
+                </form>
             </div>
         </div>
-        <div class="t">
-            <table class="employees">
-                <thead>
-                    <tr>
-                        <th>Ad</th>
-                        <th>Depatman</th>
-                        <th>Maaş</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mustafa</td>
-                        <td>Bilişim</td>
-                        <td>4000</td>
-                    </tr>
-                    <tr>
-                        <td>Mustafa</td>
-                        <td>Bilişim</td>
-                        <td>4000</td>
-                    </tr>
-                    <tr>
-                        <td>Mustafa</td>
-                        <td>Bilişim</td>
-                        <td>4000</td>
-                    </tr>
-                    <tr>
-                        <td>Mustafa</td>
-                        <td>Bilişim</td>
-                        <td>4000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
 
-    </section>
+    </main> 
+
+    
 
 
-
-
-    <!--cardbox with container-->
-    <section>
-        <div class="container kutu mt-3 ">
-
-            <div class=" card bg-dark text-white cardStyle ">
-                <img class="card-img-top cardImageStyle" src="./img/io.jpg" alt="Card image">
-                <div class="card-body cardTextStyle">
-                    <h4 class="card-title">İlkokulum</h4>
-                    <p class="card-text "> Biz, Gazi Mustafa Kemal İlkokulu olarak, bütün öğrencilerin öğrenmeyi
-                        öğrenmelerini sağlayıp, öğrencilerimizin bireysel farklılıklarına saygı duyarak onların bilgili,
-                        becerili ve kendine güvenen bireyler olarak yetişmeleri için VARIZ ve ÇALIŞMAKTAYIZ.</p>
-                    <a href="https://karamangaziio.meb.k12.tr" target="_blank" class="btn btn-outline-warning">Okulun
-                        Sayfası</a>
-                </div>
-            </div>
-            <div class="card bg-dark text-white cardStyle ">
-                <img class="card-img-top cardImageStyle" src="./img/oo.jpg" alt="Card image">
-                <div class="card-body cardTextStyle">
-                    <h4 class="card-title">Ortaokulum</h4>
-                    <p class="card-text">Okulumuzun asıl binasının inşaatına 1923 yılında başlanmış,1928 yılında eğitim
-                        öğretime geçilmiştir.O yıllarda Karaman'ın ilçe olması ve kamu binalarının yetersiz olmasından
-                        dolayı binanın bazı bölümleri sağlık ocağı ,ilköğretim müdürlüğü,akşam sanat okulu olarak da
-                        kullanılmıştır. Bununla birlikte asıl amacı olan eğitim öğretim faaliyetlerini 1928'den beri
-                        kesintisiz olarak sürdürmüştür. Cumhuriyetin ilk yıllarında yapılan okulumuzu Alman mimarisine
-                        uygun olarak Almanlar inşa etmiştir. Karaman'daki Selçuklu eseri olan bir kütüphane yıkılarak
-                        taşları bodrum katta kullanılmıştır. İşlemeli taşların ise trenlere yüklenerek götürüldüğü
-                        söylenmektedir. Götürüldüğü söylenen işlemeli taşların akıbeti hakkında herhangi bir kayıt
-                        mevcut değildir. Okulumuz 1947 ve 1982 tarihlerinde devlet tarafından tamir ettirilmiştir.Aynı
-                        yıl okulumuz Konya Kültür ve Tabiat varlıklarını Koruma Kurulu tarafından tarihi eser kabul
-                        edilmiştir.1982 yılından sonra okulumuzda yapılan tamir ve tadilatlar bu kuruldan izin alınarak
-                        Okul Aile Birliği imkanlarınca yaptırılmıştır.2007 yılından bu yana okulumuz bahçesine
-                        yaptırılan yeni binamızda eğitim ve öğretim faaliyetine devam edilmektedir</p>
-                    <a href="https://karamanimaret.meb.k12.tr/tema/index.php" target="_blank"
-                        class="btn btn-outline-warning">Okulun Sayfası</a>
-                </div>
-            </div>
-            <div class="card bg-dark text-white cardStyle ">
-                <img class="card-img-top cardImageStyle" src="./img/L.jpg" alt="Card image">
-                <div class="card-body cardTextStyle">
-                    <h4 class="card-title">Lisem</h4>
-                    <p class="card-text">Bilim ve teknolojinin farkında olan, değişime ve gelişime açık, öğrenmeyi temel
-                        ihtiyaç kabul eden, değerlerini yaşayan ve yaşatan, hoşgörü sahibi, farklılıkları zenginlik
-                        kabul eden, en az bir yabancı dili çok iyi bilen, yüksek moral değere sahip, kendine güvenen,
-                        katılımcı, kendini sorgulayan etkili ve nitelikli çağdaş, demokratik ve laik bireyler
-                        yetiştirmektir.</p>
-                    <a href="https://karamananadolu.meb.k12.tr" target="_blank" class="btn btn-outline-warning">Okulun
-                        Sayfası</a>
-                </div>
-            </div>
-
-            <br>
-        </div>
-
-    </section>
+ 
 
 
 
@@ -215,6 +129,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+   
     <footer>
         <br><br>
         <hr class="footerHr">
@@ -242,6 +168,7 @@
         </div>
         <br><br><br>
     </footer>
+
 
 
     <!--Bootstrap Js-->
