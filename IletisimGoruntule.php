@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emre Kara | Şehrim | Yerköprü Şelalesi</title>
+    <title>Emre Kara | Iletisim</title>
     <meta name="description" content="a website about Emre Kara and Karaman where a citiy of Turkey">
-    <meta name="keywords"
-        content="Emre Kara , Karaman, Ermenek, Yerköprü Şelalesi, Şelale, Turist, önemli, ziyaret, mekan">
+    <meta name="keywords" content="Emre Kara , iletişim , Yorum , hakkında">
     <meta name="author" content="Emre Kara">
+
     <!--My css files-->
     <link rel="stylesheet" href="./css/Main.css">
     <link rel="stylesheet" href="./css/NavbarStyle.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+   
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,15 +53,13 @@
                         <a href="./IlgiAlanlarım.html" class="nav-link text-muted ">Hobilerim</a>
                     </li>
                     <li class="nav-item navbarClik navbarHover dropdown ">
-                        <a href="#" class="nav-link text-warning dropdown-toggle" data-bs-toggle="dropdown">Şehrim</a>
+                        <a href="#" class="nav-link text-muted dropdown-toggle" data-bs-toggle="dropdown">Şehrim</a>
                         <ul class="dropdown-menu bg-dark ">
                             <li><a class="dropdown-item text-muted" href="./Sehrim.html">Sehrim</a></li>
                             <li><a class="dropdown-item text-muted" href="./SehrimKaradag.html">Karadağ</a></li>
                             <li><a class="dropdown-item text-muted" href="./SehrimIncesu.html">İncesu Mağrası</a></li>
-                            <li><a class="dropdown-item text-warning"
-                                    href="./SehrimErmenekYerkopruSelalesi.html">Yerköprü Şelalesi</a></li>
-                            <li><a class="dropdown-item text-muted" href="./SehrimGokceCamlıgıMesireAlanı.html">Gökçe
-                                    Çamlığı</a></li>
+                            <li><a class="dropdown-item text-muted" href="./SehrimErmenekYerkopruSelalesi.html">Yerköprü Şelalesi</a></li>
+                            <li><a class="dropdown-item text-muted" href="./SehrimGokceCamlıgıMesireAlanı.html">Gökçe Çamlığı</a></li>
                             <li><a class="dropdown-item text-muted" href="./SehrimZeyve.html">Zeyve</a></li>
                         </ul>
                     </li>
@@ -67,23 +67,17 @@
                         <a href="#" class="nav-link text-muted dropdown-toggle" data-bs-toggle="dropdown">Mirasımız</a>
                         <ul class="dropdown-menu bg-dark ">
                             <li><a class="dropdown-item text-muted" href="./Mirasimiz.html">Mirasımız</a></li>
-                            <li><a class="dropdown-item text-muted" href="./MirasimizKaramanKalesi.html">Karaman
-                                    Kalesi</a></li>
-                            <li><a class="dropdown-item text-muted" href="./MirasimizAktekkeCami.html">Aktekke Cami</a>
-                            </li>
+                            <li><a class="dropdown-item text-muted" href="./MirasimizKaramanKalesi.html">Karaman Kalesi</a></li>
+                            <li><a class="dropdown-item text-muted" href="./MirasimizAktekkeCami.html">Aktekke Cami</a></li>
                             <li><a class="dropdown-item text-muted" href="./MirasimizTartanEvi.html">Tartan Evi</a></li>
-                            <li><a class="dropdown-item text-muted" href="./Mirasimiz1001Kilise.html">1001 Kilise</a>
-                            </li>
-                            <li><a class="dropdown-item text-muted" href="./MirasimizManazanMagralari.html">Manazan
-                                    Mağraları</a></li>
-                            <li><a class="dropdown-item text-muted" href="./MirasimizKızlarTürbesi.html">Kızlar
-                                    Türbesi</a></li>
-                            <li><a class="dropdown-item text-muted" href="./MirasimizCesmeliKilise.html">Çeşmeli
-                                    Kilise</a></li>
+                            <li><a class="dropdown-item text-muted" href="./Mirasimiz1001Kilise.html">1001 Kilise</a></li>
+                            <li><a class="dropdown-item text-muted" href="./MirasimizManazanMagralari.html">Manazan Mağraları</a></li>
+                            <li><a class="dropdown-item text-muted" href="./MirasimizKızlarTürbesi.html">Kızlar Türbesi</a></li>
+                            <li><a class="dropdown-item text-muted" href="./MirasimizCesmeliKilise.html">Çeşmeli Kilise</a></li>
                         </ul>
                     </li>
                     <li class="nav-item navbarClik navbarHover">
-                        <a href="./Iletisim.html" class="nav-link text-muted">İletişim</a>
+                        <a href="./Iletisim.html" class="nav-link text-warning">İletişim</a>
                     </li>
                     <li class="nav-item navbarClik navbarHover">
                         <a href="./Login.php" class="nav-link text-muted"><i class="fa-solid fa-right-to-bracket"></i>
@@ -96,53 +90,91 @@
     <br>
 
 
-    <!--genel bilgi ve resim-->
-    <section class=" container bg-dark BorderRadius">
-        <div class=" row expnationBoxStyle">
-            <div class=" col-lg-4">
-                <img class="imgProfile2 " src="./img/yerköprü1.jpg" alt="Emre Kara">
-            </div>
-            <div class=" card bg-dark PicturedInfoBox col-lg ">
-                <div class="card-body cardTextStyle">
-                    <h4 class="card-title">Yerköprü Şelalesi</h4>
-                    <p class="card-text ">
-                        Yerköprü Şelalesi, Tarım ve Orman Bakanlığı Doğa koruma ve Milli Parklar Genel Müdürlüğü
-                        tarafından Türkiye’de koruma altına alınan 94 tabiat anıtı ağacın yanı sıra tabii ve tabiat
-                        olaylarının meydana getirdiği özelliklere sahip 8 ayrı tabiat parçasından biridir. Şelale, 03
-                        Mayıs 2011 tarihinde Tabiat Anıtı olarak tescillenmiştir. Ermenek Çayı üzerinde bulunan Yerköprü
-                        Şelalesi’ni görenler hayran kalmaktadır.
-
-                    </p>
-                </div>
-            </div>
+        <div class="t">
+                <h1><span class="blue">&lt;</span>İletişim Bİlgileri<span class="blue">&gt;</span>
+                <table class="container">
+                    <thead>
+                        <tr>
+                            <th><h1>Kategori</h1></th>
+                            <th><h1>Yanıtlar</h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ad</td>
+                            <td>
+                            <?php
+                            echo $_POST['ad'];
+                            ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Soyad</td>
+                            <td>
+                            <?php
+                            echo $_POST['soyad'];
+                            ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cinsiyet</td>
+                            <td>
+                            <?php
+                            echo $_POST['cinsiyet'];
+                            ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>e-Mail</td>
+                            <td>
+                            <?php
+                            echo $_POST['email'];
+                            ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Doğum Tarihi</td>
+                            <td>
+                            <?php
+                            echo $_POST['dogumTarihi'];
+                            ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Yorum Tipi</td>
+                            <td><?php
+                            echo $_POST['YTipi'];
+                            ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Şehir Kodu</td>
+                            <td>
+                            <?php
+                            echo $_POST['sehir'];
+                            ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mesaj</td>
+                            <td><?php
+                            echo $_POST['mesaj'];
+                            ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dosya</td>
+                            <td>
+                            <?php
+                            echo $_POST['dosya'];
+                            ?>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
         </div>
+    
 
-    </section>
-    <br>
-    <!--genel bilgi ve resim reverse-->
-    <section class=" container bg-dark BorderRadius">
-        <div class=" row expnationBoxStyle">
-            <div class=" card bg-dark PicturedInfoBox col-lg ">
-                <div class="card-body cardTextStyle">
-                    <p class="card-text ">
-                        Mut ilçe merkezine 35 kilometre uzaklıktaki şelaleyle ilgili uzmanların yaptığı araştırmada, 110
-                        milyon yıl önce Kretase (Tebeşir Dönemi) yaşlı kireçtaşlarının faydalanması sonucunda çok dar
-                        bir kaynak suyun varlığıyla ortaya çıktığı belirtilmektedir. Yaklaşık 30 metre yükseklikten akan
-                        şelalenin, kendisini oluşturan 200 metre uzunluğunda, 10 metre genişliğinde ve tabanı 10-15
-                        metre derinliğinde göl olan su tünelinin içerisindeyse doğallığı bozulmamış sarkıt ve zengin
-                        bitki örtüsü yer almaktadır. En etkili yerlerden biri olan ve köprü görevini gören mağaranın
-                        Gezende Barajı’ndan gelen suyla beslenmesi ve kayanın dibindeki gözden çıkan suyun birleşme
-                        yerindeki hareketlilik beraberinde serinliği getirmektedir.</p>
-                </div>
-            </div>
-
-            <div class=" col-lg-4 ">
-                <img class="imgProfile2 " src="./img/yerkopru2.jpg" alt="Emre Kara">
-            </div>
-        </div>
-
-    </section>
-    <br>
 
 
 
@@ -175,10 +207,9 @@
     </footer>
 
 
-
     <!--Bootstrap Js-->
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>s
+</html>
