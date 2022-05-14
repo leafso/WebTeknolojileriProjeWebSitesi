@@ -109,7 +109,7 @@
                 <hr>
                 <button class="btn btn-outline-primary col-12" type="submit">Gönder</button>
                 <br> <br>
-                <button class="btn btn-outline-danger col-12" type="submit">Temizle</button>
+                <button class="btn btn-outline-danger col-12" type="reset">Temizle</button>
 
                 </form>
             </div>

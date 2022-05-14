@@ -43,7 +43,4 @@ function ListTop(){
        
         
 }
-
-//https://api.jikan.moe/v3/top/type/page/subtype
-
 ListTop();
